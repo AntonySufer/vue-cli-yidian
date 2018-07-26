@@ -43,7 +43,7 @@
         page:1,
         isloading:true,
         scrollbarObj: false,
-        pullDownRefreshObj:false,
+        pullDownRefreshObj:true,
         pullUpLoadObj: { // 这个配置用于做上拉加载功能，默认为 false。当设置为 true 或者是一个 Object 的时候，可以开启上拉加载，可以配置离底部距离阈值（threshold）来决定开始加载的时机
           threshold: 0,
           txt: {
