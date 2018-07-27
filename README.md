@@ -1,6 +1,6 @@
 
 # 项目示例
-[图片示例](https://github.com/AntonySufer/vue-cli-yidian/blob/master/static/exp/1.jpg)
+![主页](https://github.com/AntonySufer/vue-cli-yidian/tree/master/static/exp/1.jpg)
 
 # 技术支持
 - vue-cli2.0
