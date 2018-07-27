@@ -3,7 +3,7 @@
   <div id="main" class="main-content">
       <HDEADERS v-bind:if_back="0"></HDEADERS>
       <!-- 主要内容 -->
-
+    <img v-bind:src="imgUrl" />
     <p class="text-con" v-text="noteData.node"></p>
 
     <div class="index-autor" v-on:click="goArt" >
@@ -44,7 +44,8 @@
     },
     data () {
       return {
-        noteData:{}
+        noteData:{},
+        imgUrl :'./static/assets/img6.jpg'
       }
     },
     computed:{
