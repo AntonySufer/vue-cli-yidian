@@ -10,7 +10,7 @@
 
     <HDEADERS v-bind:if_back="1"></HDEADERS>
     <div class="art-head" @click="showSide">
-      <img  src="../assets/category.png"/>
+      <img  src="../assets/img/category.png"/>
     </div>
 
     <div class="art-mid" >

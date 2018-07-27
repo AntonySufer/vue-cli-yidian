@@ -6,8 +6,8 @@ import router from './router'
 import 'lib-flexible/flexible'
 import store from './store/index'
 import FastClick from 'fastclick'
-import './css/public.css'/*引入公共样式*/
-import './css/main.css'/*引入公共样式*/
+import './assets/css/public.css'/*引入公共样式*/
+import './assets/css/main.css'/*引入公共样式*/
 
 import axios from './config/api/axios'   /*数据请求*/
 Vue.prototype.$axios = axios;

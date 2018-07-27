@@ -12,7 +12,7 @@
       <div class="side-content" v-show="isRellyShow">
         <!-- css transition动画 加深理解 -->
          <div class="change" >
-           <img  src="../assets/11.jpg" alt="" />
+           <img  src="../assets/img/11.jpg" alt="" />
            <p>yidain</p>
 
          </div>

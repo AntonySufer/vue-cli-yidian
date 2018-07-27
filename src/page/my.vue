@@ -4,7 +4,7 @@
       <HDEADERS v-bind:if_back="1"></HDEADERS>
       <div class="my-mid">
         <div>
-          <img src="../assets/qrcode.png"/>
+          <img src="../assets/img/qrcode.png"/>
         </div>
         <p>
           <span>yidian</span>

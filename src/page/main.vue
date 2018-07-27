@@ -7,7 +7,7 @@
     <p class="text-con" v-text="noteData.node"></p>
 
     <div class="index-autor" v-on:click="goArt" >
-      <img src="../assets/11.jpg" />
+      <img src="../assets/img/11.jpg" />
        <p v-on:click="goArt" >进入</p>
     </div>
 
