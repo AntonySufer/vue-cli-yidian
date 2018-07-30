@@ -1,5 +1,12 @@
 import * as types from './mutation-types.js'
-
+//理解 { commit } ,
+// { dispatch: local.dispatch,
+//   commit: local.commit,
+//   getters: local.getters,
+//   state: local.state,
+//   rootGetters: store.getters,
+//   rootState: store.state
+// }
 export default{
   showloader:({ commit }) => {
     commit( types.SHOWLOADING )
@@ -13,10 +20,7 @@ export default{
   hideBar:({ commit }) => {
     commit( types.HIDEBAR )
   },
-  getUser:({ commit }) => {
-    commit( types.GETUSERINFO )
-  },
-  setUser:({ commit }) => {
-    commit( types.SETUSERINFO )
+  setUser:({ commit},userInfo) => {
+    commit( types.SETUSERINFO,userInfo )
   },
 }

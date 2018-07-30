@@ -3,7 +3,6 @@
   <div id="main" class="main-content">
       <HDEADERS v-bind:if_back="0"></HDEADERS>
       <!-- 主要内容 -->
-    <img v-bind:src="imgUrl" />
     <p class="text-con" v-text="noteData.node"></p>
 
     <div class="index-autor" v-on:click="goArt" >
@@ -34,8 +33,7 @@
 
 <script type="text/javascript">
  import HDEADERS from '../components/header.vue';
- //import {mapState,mapMutations} from 'vuex';
- //import { Group,XInput,Cell  } from 'vux';
+ import {mapState,mapActions,mapGetters} from 'vuex';
 
 
  export default {
@@ -49,17 +47,20 @@
       }
     },
     computed:{
-
+      ...mapGetters(['getUserInfo'])//测试下mapGetters
     },
     created(){
      this.getNotes();
+     let userInfo ={'openId':'ohhpN5RCGIIiRZAP7V52sBdwrKyU'}; //测试下action
+     this.setUser(userInfo);
     },
     methods:{
+      ...mapActions(['setUser']),//测试下action
       goArt() {
          this.$router.push('/art');
       },
       getNotes(){
-        var _this = this ;
+         var _this = this ;
         this.$axios.post(this.$api.getNotes).then((response)=>{
           var Data =response.data;
           if (Data && Data.status==200){

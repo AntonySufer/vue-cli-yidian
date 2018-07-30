@@ -14,11 +14,8 @@ const mutations = {
   [HIDEBAR](state){
     state.showBar = false;
   },
-  [GETUSERINFO](state,userInfo){
-    state.getUser = userInfo;
-  },
-  [SETUSERINFO](state,){
-    state.setUser = userInfo
+  [SETUSERINFO](state,userInfo){
+    state.userInfo = userInfo;
   }
 }
 

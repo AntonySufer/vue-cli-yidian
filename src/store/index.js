@@ -9,7 +9,7 @@ Vue.use(Vuex)
 let state={
   showLoading:false,
   showBar:false,
-  userInfo:{'openid':'ohhpN5RCGIIiRZAP7V52sBdwrKyU'}
+  userInfo:{}
 }
 
 var  store = new Vuex.Store({
