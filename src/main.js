@@ -10,6 +10,7 @@ import './assets/css/public.css'/*引入公共样式*/
 import './assets/css/main.css'/*引入公共样式*/
 
 import axios from './config/api/axios'   /*数据请求*/
+axios.defaults.withCredentials=true;
 Vue.prototype.$axios = axios;
 
 import {api} from './config/env'; /*请求url链接*/

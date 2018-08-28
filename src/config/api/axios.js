@@ -8,9 +8,16 @@ const service = axios.create({
   timeout: 15000,
   headers: {
     "Accept": "application/json, text/plain, */*",
-    "Content-Type" : "application/x-www-form-urlencoded"
+    'Content-Type':'application/json;charset=utf-8',
+    "Accept-Language":"zh-CN,zh;q=0.8",
+   // "keep-alive":"keep-alive"
+    //"User-Agent":"Mozilla/5.0 (Linux; U; Android 8.0.0; zh-cn; STF-AL00 Build/HUAWEISTF-AL00) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    //"cookie":"PHPSESSID=vt83vvhgct23n0dv0q3gfsaug5"
   }
 })
+
+
+
 
 service.interceptors.request.use(function(config){
   store.dispatch('showloader');

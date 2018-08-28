@@ -24,7 +24,8 @@ export default new Router({
     { path: '*', component: resolve => require(['../components/err.vue'], resolve) },
     { path: '/history', meta: { keepAlive: true }, component: resolve => require(['../page/historyList.vue'], resolve) },
     { path: '/attent', meta: { keepAlive: true },component: resolve => require(['../page/attention.vue'], resolve) },
-    { path: '/my', component: resolve => require(['../page/my.vue'], resolve) }
+    { path: '/my', component: resolve => require(['../page/my.vue'], resolve) },
+    { path: '/kuai', meta: { keepAlive: true }, component: resolve => require(['../page/getkuai.vue'], resolve) }
 
 
   ]

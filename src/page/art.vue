@@ -92,7 +92,7 @@
       },
       /*获取首页*/
       getNewArt(){
-          let data = {'openid':this.userInfo.openid,'art_id':this.art_id};
+          let data = {'openid':this.userInfo.openId,'art_id':this.art_id};
           this.$axios.post(this.$api.getIndexArt,data).then((response)=>{
             var artData =response.data;
             if (artData && artData.code===200){

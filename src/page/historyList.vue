@@ -85,6 +85,7 @@
                 if (artD.data.length<15 && _this.page==1 ){
                   _this.$refs.scroll.forceUpdate(false); //重启跳槽scroll
                   _this.isloading =false ;
+                  return ;
                 }
               _this.$refs.scroll.forceUpdate(true); //重启跳槽scroll
               _this.page++;
