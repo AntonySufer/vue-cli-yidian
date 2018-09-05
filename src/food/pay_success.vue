@@ -1,10 +1,12 @@
 <template>
   <div>
-    <p class="err-head">错 误</p>
-   <img src="@assets/foodimg/404.jpg"/>
-   <div class="err-btn">
-     <p class="err-back" @click="$router.goBack()">返  回</p>
-   </div>
+    <p class="err-head">信息</p>
+
+    <div class="err-btn">
+      <img src="@assets/foodimg/suc.png"/>
+      <p class="pay-success">付款成功</p>
+      <p class="err-back" @click="goDea">查看订单</p>
+    </div>
   </div>
 </template>
 <style type="text/css">
@@ -19,15 +21,20 @@
     color: #fff;
   }
   img{
-    height: 400px;
-    width: 100%;
+    height: 128px;
+    width: 128px;
   }
   .err-btn{
     padding: 0px 30px;
     text-align: center;
     margin-top: 30px;
   }
+  .pay-success{
+    font-size:30px;
+    color: #333;
+  }
   .err-back{
+    margin-top: 100px;
     background: #FF5655;
     height: 80px;
     line-height: 80px;
@@ -38,12 +45,31 @@
   }
 
 </style>
-<script>
-  export default {
+
+<script type="text/javascript">
+
+ export default {
+    components: {
+
+    },
     data () {
       return {
-        msg: 'Error:404'
+
+      }
+    },
+    computed:{
+
+    },
+    created(){
+
+    },
+    methods:{
+      goDea:function () {
+        this.$router.push('/order');
       }
     }
+
+
   }
 </script>
+

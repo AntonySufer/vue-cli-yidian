@@ -1,0 +1,1023 @@
+/*头部css  start*/
+
+#app>div{
+  height: 100%;
+  width: 100%;
+}
+
+.headerCon{
+  height:80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top:0;
+  background:#24292C ;
+  color: #fff;
+
+  .header-back{
+    position: absolute;
+    left: 30px;
+    font-size:40px;
+    display: inline-block;
+    width: 50px;
+  }
+
+  p{
+    //margin-left: px;
+    position: relative;
+    line-height: 80px;
+    text-align: center;
+    font-size:30px;
+  }
+
+}
+
+/*头部css  end*/
+
+
+/*footer css  start*/
+.footerCon{
+  height:80px;
+  width: 100%;
+  color: #999999;
+
+
+  p{
+    margin-left: 45%;
+    line-height: 80px;
+    font-size:24px;
+  }
+
+}
+
+/*footer  css  end*/
+
+
+/**index 首页  start**//**index 首页  start**/
+.index-content {
+  background: url("../foodimg/index-bg.png")  repeat-y center top ;
+  background-size: 100% 100%;
+
+      .index-head{
+        padding-top: 80px;
+        overflow: hidden;
+        height:750px;
+         p{
+           height: 50px;
+           width: 100%;
+           line-height: 50px;
+           text-align: center;
+           font-size:40px;
+           margin-top:540px;
+           color: #333333;
+           font-weight: bold;
+         }
+      }
+      .index-mid{
+        padding: 0px 60px;
+
+        .mid-p{
+           height:30px;
+           width: 100%;
+           text-align: center;
+           line-height: 30px;
+           font-size:28px;
+           font-family:PingFang-SC-Medium;
+           font-weight:500;
+           color:rgba(51,51,51,1);
+         }
+         .mid-btn{
+            width: 100%;
+            height: 120px;
+            line-height: 120px;
+            margin-top: 30px;
+            border-radius: 8px;
+            background: #FF5655;
+            color: #FFFFFF;
+            font-size:36px;
+            vertical-align:middle;
+            text-align: center;
+            img{
+              vertical-align:middle;
+              display: inline-block;
+              margin-top: -3px;
+              height:64px;
+              width: 64px;
+            }
+
+         }
+      }
+
+
+}
+
+/**index 首页  end**//**index 首页  end**/
+
+
+
+/**shop 首页  start**//**shop 首页  start**/
+
+.shop-content{
+  background: #F5F5F5;
+  .shop-con{
+     padding: 80px 30px 0 30px;
+    background: #FFFFFF;
+     .shop-head{
+        padding-top: 20px;
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        flex-flow:row nowrap;
+        justify-content:space-between;
+        align-items:center;
+        .name-con{
+          display: flex;
+          display: -webkit-flex; /* Safari */
+          flex-flow:row nowrap;
+          justify-content:space-between;
+          align-items:center;
+          vertical-align:middle;
+           img{
+             border-radius:8px;
+             vertical-align:middle;
+              height: 100px;
+              width: 100px;
+           }
+          .shop-name-d{
+            margin-left:30px ;
+            font-weight:bold;
+            color:rgba(51,51,51,1);
+            line-height:40px;
+            font-size:32px;
+          }
+          .shop-start{
+            margin-left:30px ;
+            font-size:28px;
+          }
+        }
+
+        .collect-con{
+          width:128px;
+          height:56px;
+          text-align: center;
+          border-radius:28px;
+          background: #FF5655;
+          font-size:26px;
+          line-height: 56px;
+          color: #fff;
+           img{
+             vertical-align:middle;
+             height: 22px;
+             width: 26px;
+           }
+        }
+     }
+
+     .shop-addr-con{
+       padding: 30px 0;
+        img{
+          height: 24px;
+          width: 20px;
+          vertical-align: middle;
+        }
+        .tel-img{
+          height: 32px;
+          width: 32px;
+        }
+     }
+
+  }
+
+  .shop-hot{
+    margin-top: 20px;
+    padding: 0px 30px 30px 30px;
+    background: #fff;
+    border-radius: 8px;
+    .hot-tit{
+
+      height:60px;
+      line-height: 60px;
+      font-size:28px;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+    }
+    .hot-img-con{
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-flow:row nowrap;
+      justify-content:space-around;
+      align-items:center;
+      .hot-img-chi{
+        img{
+          width:216px;
+          height:162px;
+          border-radius:8px;
+        }
+        p{
+          font-size:28px;
+          font-weight:bold;
+          color:rgba(51,51,51,1);
+        }
+      }
+    }
+    .hot-btn{
+      margin-top: 60px;
+      height:96px;
+      text-align: center;
+      border-radius:8px;
+      background: #FF5655;
+      font-size:30px;
+      line-height: 96px;
+      color: #fff;
+    }
+
+
+
+  }
+
+  .shop-detail{
+    margin-top: 20px;
+    padding: 0px 30px 30px 30px;
+    background: #fff;
+    border-radius: 8px;
+    .detail-tit{
+      position: relative;
+      height:60px;
+      line-height: 60px;
+      font-size:28px;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+      .go-detail{
+        position: absolute;
+        right: 0px;
+      }
+
+    }
+
+
+    div{
+      border-radius:8px;
+      img{
+        width:100%;
+        height:274px;
+        border-radius:8px;
+      }
+    }
+
+  }
+
+  .shop-menu{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    bottom: 0px;
+    height: 98px;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-flow:row nowrap;
+    justify-content:space-around;
+    align-items:center;
+    color: #B3B3B3;
+    font-size:22px;
+    img{
+      width:44px;
+      height:44px;
+    }
+
+
+  }
+
+
+}
+
+
+/**shop 首页  end**//**shop 首页  end**/
+
+
+
+
+/**down_order 下单  start**//**down_order 首页  start**/
+
+.down_order-content{
+  background: #F5F5F5;
+  .down-ord {
+    padding: 80px 30px 0 30px;
+    background: #FFFFFF;
+    .down-menu{
+      padding: 30px 0px;
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-flow:row nowrap;
+      justify-content: space-between;
+      align-items:center;
+      .menu-li{
+        height:80px;
+        background:rgba(229,229,229,1);
+        border-radius:4px;
+        width:216px;
+        text-align: center;
+        line-height: 80px;
+        font-size:28px;
+        font-weight:bold;
+        color: #333333;
+
+      }
+    }
+
+  }
+
+  .menu-content{
+     width: 100%;
+     top:220px;
+     overflow: scroll;
+     position: fixed;
+     bottom: 120px;
+
+  }
+
+  .menu-con{
+    padding: 0px 30px;
+    .menu-type-name{
+      position: relative;
+      height:60px;
+      line-height: 60px;
+      font-size:28px;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+    }
+    .menu-ul{
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items:center;
+      .menu-con-li{
+        background: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        .menu-li-detail{
+          img{
+            width:336px;
+            height:252px;
+            border-radius:8px 8px 0px 0px;
+          }
+          .menu-food-name{
+            margin-left:10px ;
+            height:60px;
+            line-height: 60px;
+            font-size:32px;
+            font-weight:bold;
+            color:rgba(51,51,51,1);
+          }
+          .menu-food-price{
+            margin-left:10px ;
+            position: relative;
+            color: #FF5655;
+            font-size:32px;
+            height: 50px;
+            line-height: 50px;
+            span:nth-child(1){
+              font-size:20px;
+            }
+            span:nth-child(2){
+
+            }
+            img{
+              position: absolute;
+              right: 10px;
+              display: inline-block;
+              width:88px;
+              height:48px;
+              border-radius:24px;
+            }
+          }
+
+
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+/**down_order 下单   end**//**down_order   end**/
+
+/* 订单footer start*/
+.down-footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+
+.down-food-menu{
+  padding: 20px 30px;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  .down-footer-ord{
+    width:200px;
+    height:88px;
+    line-height:88px;
+    color: #fff;
+    text-align: center;
+    font-size:30px;
+    background: #FF5655;
+    border-radius:8px;
+
+  }
+  .down-img-chi{
+    position: relative;
+    .down-ord-num{
+      text-align: center;
+      position: absolute;
+      background: #FF5655;
+      color: #fff;
+      height: 32px;
+      border-radius:50%;
+      width: 32px;
+      top:0;
+      right: -6px;
+      display: inline-block;
+    }
+  }
+  img{
+    height:64px ;
+    width: 64px;
+  }
+}
+/* 订单footer end*/
+
+
+
+/**shop_detail 店铺详情   start**//**shop_detail   start**/
+
+.shop_detail-content{
+  background: #F5F5F5;
+  .shop-detail-con {
+    padding: 80px 30px 0 30px;
+    background: #FFFFFF;
+    .detail-img{
+       padding: 30px 0;
+       img{
+         width:690px;
+         height:345px;
+         border-radius:1px;
+       }
+    }
+
+    .addr-shop{
+
+      img{
+        margin-right: 20px;
+        margin-top: 10px;
+        width:23px;
+        height:28px;
+      }
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      .addr-shop-name{
+        font-size:28px;
+        font-weight:bold;
+        color:rgba(51,51,51,1);
+      }
+      .addr-shop-det{
+        font-size:26px;
+        font-weight:500;
+        color:rgba(102,102,102,1);
+        line-height:40px;
+      }
+    }
+
+    .detail-tel{
+      height:250px;
+      width: 100%;
+      .detail-tel-p{
+         height: 92px;
+         border-top:1px solid #E5E5E5 ;
+         border-bottom:1px solid #E5E5E5 ;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-between;
+         align-items: center;
+         p>span{
+           font-size:28px;
+           font-weight:bold;
+           color:rgba(51,51,51,1);
+           line-height:40px;
+         }
+         img{
+           width:28px;
+           height:26px;
+           margin-right: 10px;
+         }
+        .detail-tel-number{
+          font-size:26px;
+          font-weight:500;
+          color:rgba(102,102,102,1);
+          line-height:40px;
+        }
+
+      }
+    }
+
+  }
+
+
+
+}
+/**shop_detail 店铺详情   end**//**shop_detail   end**/
+
+
+/**dish_detail 店铺详情   start**//**dish_detail   start**/
+.dish_detail-content{
+  background: #F5F5F5;
+  .dish_detail-banner{
+    padding-top: 80px ;
+    width:100%;
+    height:563px;
+    img{
+      width:100%;
+      height:563px;
+    }
+  }
+  .dish_detail-con {
+    padding: 0px 30px 0 30px;
+    background: #FFFFFF;
+    .dish-li-detail{
+      height:147px;
+      .dish-food-name{
+        height:60px;
+        line-height: 60px;
+        font-size:32px;
+        font-weight:bold;
+        color:rgba(51,51,51,1);
+      }
+
+
+    }
+
+
+  }
+
+  .dish_readme{
+    background: #fff;
+    padding: 0px 30px;
+    margin-bottom: 120px;
+    margin-top: 30px;
+    p:nth-child(1){
+      height: 60px;
+      line-height: 60px;
+      font-size:26px;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+    }
+    p:nth-child(2){
+      font-size:26px;
+      line-height: 50px;
+      font-family:PingFang-SC-Medium;
+      font-weight:500;
+      color:rgba(102,102,102,1);
+    }
+    p:nth-child(3){
+      line-height: 50px;
+      font-size:26px;
+      font-weight:500;
+      color:rgba(102,102,102,1);
+    }
+  }
+
+}
+
+
+/* 加钱菜品 start */
+.dish-food-price{
+  position: relative;
+  color: #FF5655;
+  font-size:32px;
+  height: 50px;
+  line-height: 50px;
+  span:nth-child(1){
+    font-size:20px;
+  }
+  span:nth-child(2){
+    font-weight:bold;
+  }
+  span:nth-child(4){
+    position: absolute;
+    right: 42px;
+    display: inline-block;
+    width:88px;
+    height:48px;
+    font-size:30px;
+    border-radius:24px;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+  }
+  img:nth-child(5){
+    position: absolute;
+    right: 150px;
+    display: inline-block;
+    width:72px;
+    height:48px;
+    border-radius:24px;
+
+    border-radius:24px;
+  }
+  img:nth-child(3){
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    width:72px;
+    height:48px;
+    border-radius:24px;
+  }
+
+}
+/*加钱菜品  end*/
+
+/**dish_detail 店铺详情   end**//**dish_detail   end**/
+
+
+/**pre_order.vue 店铺详情   start**//**pre_order.vue   start**/
+.pre_order-content{
+  background: #F5F5F5;
+  .pre_order {
+    padding: 80px 30px 0 30px;
+    background: #FFFFFF;
+    .pre-ord-head{
+       border-bottom: 1px solid #e5e5e5;
+       height: 90px;
+       width: 100%;
+       display: flex;
+       display: -webkit-flex;
+       flex-flow: row nowrap;
+       justify-content: space-between;
+       align-items: center;
+       p{
+         height: 90px;
+         line-height: 90px;
+         font-size:30px;
+         font-weight:bold;
+         color:rgba(51,51,51,1);
+       }
+       .pre-head-img{
+         color:rgba(102,102,102,1);
+         img{
+           width:20px;
+           height:24px;
+           vertical-align: center;
+
+         }
+       }
+    }
+
+    .pre-ord-con{
+      margin-bottom: 119px;
+       .pre-ord-li{
+         padding: 30px 0px ;
+         border-bottom: 1px solid #E5E5E5;
+         display: flex;
+         display: -webkit-flex;
+         flex-flow: row nowrap;
+         justify-content: flex-start;
+         align-items: center;
+          .li-left-con{
+
+            img{
+              width:200px;
+              height:150px;
+            }
+          }
+          .li-right-con{
+            width: 100%;
+            height:150px;
+            margin-left: 20px;
+             .li-right-name{
+               overflow : hidden;
+               text-overflow: ellipsis;
+               display: -webkit-box;
+               -webkit-line-clamp:2;
+               -webkit-box-orient: vertical;
+               height: 100px;
+               line-height: 50px;
+               font-size:32px;
+               font-weight:bold;
+               color:rgba(51,51,51,1);
+             }
+            .li-right-price{
+
+            }
+          }
+       }
+
+
+
+    }
+
+  }
+
+
+}
+
+.pre-ord-foot{
+  -moz-box-shadow:0px 0px 2px #e5e5e5;
+  -webkit-box-shadow:0px 0px 2px #e5e5e5;
+  box-shadow:0px 0px 2px #e5e5e5;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  height:120px;
+  .pre-ord-menu{
+    padding: 0px 30px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .pre-ord-chi{
+      height: 120px;
+      line-height: 120px;
+      font-size:32px;
+      &>span:nth-child(1){
+        color: #333333;
+      }
+      &>span:nth-child(2){
+        color: #FF5655;
+        font-weight:500;
+      }
+    }
+    .pre-ord-goOrd{
+      height: 120px;
+
+      text-align: center;
+      font-size:30px;
+      color:rgba(255,255,255,1);
+      font-weight:bold;
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      &>p{
+        line-height: 88px;
+        width:200px;
+        height:88px;
+      }
+      p:nth-child(1){
+        background:rgba(255,170,84,1);
+        border-radius:8px 0px 0px 8px;
+      }
+      p:nth-child(2){
+        background:rgba(255,86,85,1);
+        border-radius:0px 8px 8px 0px;
+      }
+    }
+  }
+}
+
+
+/**pre_order.vue 店铺详情   end**//**pre_order.vue   end**/
+
+
+/**pay_order.vue 店铺详情   start**//**pay_order.vue   start**/
+
+.pay_orders-content{
+  background:#fff;
+  .pay_orders {
+    padding-top:100px;
+    .pay-main{
+      background: #fff;
+      padding: 0px 0px 0px 30px;
+
+    }
+    .eat-leave{
+      height: 10px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+
+    .eat-mar-right{
+      margin-right: 30px;
+    }
+    .no-border{
+      border: 0px !important;
+    }
+    .eat-type{
+      border-bottom: 1px solid #e5e5e5;
+      height: 90px;
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+       .eat-type-disc{
+         font-size:30px;
+         font-weight:bold;
+         color:rgba(51,51,51,1);
+       }
+      .eat-type-btn{
+        width:280px;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        p{
+          color:rgba(255,255,255,1);
+          text-align: center;
+          width:120px;
+          height:48px;
+          line-height: 48px;
+          border-radius:24px;
+          font-size:30px;
+        }
+        &>p:nth-child(1){
+          background:rgba(204,204,204,1);
+        }
+        &>p:nth-child(2){
+          background:rgba(255,86,85,1);
+        }
+      }
+    }
+    .eat-tel{
+      font-size:30px;
+      font-weight:500;
+      color:rgba(102,102,102,1);
+    }
+
+    .eat-choose{
+       margin-top: 10px;
+
+    }
+
+    .eat-con-li{
+      height: 100px !important;
+       img{
+         vertical-align: center;
+         width:80px;
+         height:60px;
+       }
+      .eat-con-left-li{
+        justify-content: space-between;
+        width: 400px;
+        border: 0px !important;
+        &>p:nth-child(1){
+          width: 80%;
+          margin-left: 10px;
+          overflow: hidden;
+          height: 60px;
+          line-height: 60px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          font-size:28px;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+        }
+        &>p:nth-child(2){
+          width: 20%;
+
+          font-size:28px;
+          font-weight:500;
+          color:rgba(153,153,153,1);
+        }
+      }
+
+      .eat-mar-price{
+        display: flex;
+         width: 300px;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        margin-left: 20px;
+         &>p:nth-child(1){
+           font-size:24px;
+           color:rgba(51,51,51,1);
+         }
+        &>p:nth-child(2){
+          font-size:30px;
+          font-weight:bold;
+          color:#333333;
+        }
+      }
+
+    }
+  }
+}
+
+/**pay_order.vue 店铺详情   end**//**pay_order.vue   end**/
+
+
+
+/**order.vue 店铺详情   start**//**order.vue   start**/
+
+
+.my-order-content {
+  background: #e5e5e5;
+  .my-ord-con {
+    padding-top: 80px;
+    .my-ord-main {
+      background: #fff;
+      padding: 0px 0px 0px 30px;
+
+    }
+    .eat-leave {
+      height: 20px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+    .my-mar-right{
+      margin-right: 30px;
+    }
+
+
+    .menu-active{
+      border-bottom: 4px solid rgba(255,86,85,1) ;
+    }
+
+    .my-ord-menu-ul {
+      padding: 0px 30px ;
+      background: #FFFFFF;
+      .my-ord-down-menu{
+
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        flex-flow:row nowrap;
+        justify-content: space-around;
+        align-items:center;
+        .my-ord-menu-li{
+          height:80px;
+          width:100px;
+          text-align: center;
+          line-height: 80px;
+          font-size:30px;
+          font-weight:bold;
+          color: #333;
+
+        }
+      }
+
+    }
+
+   .my-ord-mid{
+      width: 100%;
+      background: #e5e5e5;
+      .my-ord-li{
+        background: #fff;
+        .my-ord-shop{
+           display: flex;
+           flex-flow: row nowrap;
+           justify-content: space-between;
+           align-items: center;
+           align-content: center;
+          .my-ord-shop-info{
+            width: 400px;
+            height:90px ;
+            line-height: 90px;
+            position: relative;
+          }
+           img{
+             margin-top: 20px;
+             vertical-align: center;
+             width:56px;
+             height:56px;
+             border-radius:28px;
+           }
+           span{
+             position: absolute;
+             margin-left: 10px;
+             top:0px;
+           }
+
+          .my-ord-confim{
+            font-size:26px;
+            font-weight:500;
+            color:rgba(70,211,133,1);
+            line-height:40px;
+          }
+
+        }
+      }
+   }
+
+
+  }
+}
+
+/**order.vue 店铺详情   end**//**order.vue   end**/

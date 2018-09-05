@@ -6,6 +6,8 @@
       <vue-video v-show="isShow" ref="video1" :options="videoOptions" @init="initHandler"></vue-video>
     </div>
 
+    <input type="button" value="下载" @click="download"/>
+    <a href="/static/video/33.mp4" download="33.mp4" >下现在在</a>
   </div>
 </template>
 
@@ -45,8 +47,8 @@
 
     },
     mounted() {
-      this.videoOptions.src='/static/video/33.mp4';
-     this.video1 = this.$refs.video1;
+      this.videoOptions.src='/static/video/33.mp4'; //模拟数据
+      this.video1 = this.$refs.video1;
       setTimeout(()=>{
         this.video1.change(this.videoOptions);
         this.isShow=true;
@@ -57,6 +59,29 @@
       initHandler(){
 
       },
+      download () {
+//        let url = '/static/video/33.mp4';
+//        let link = document.createElement('a')
+//        link.style.display = 'none'
+//        link.href = url
+//        link.setAttribute('download', '33.mp4')
+//        document.body.appendChild(link);
+//        setTimeout(()=>{  link.click()},1000);
+        let link = document.createElement('form');
+        link.method='get';
+        link.setAttribute('action', '/static/video/33.mp4')
+       // var $eleForm = $("<form method='get'></form>");
+
+       // $eleForm.attr("action","/static/video/33.mp4");
+
+        document.body.appendChild(link);
+
+        setTimeout(()=>{    link.submit();},1000);
+        //提交表单，实现下载
+
+
+
+      }
     },
    beforeDestroy: function () {
      this.video1.pause();
