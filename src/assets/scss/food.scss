@@ -265,26 +265,6 @@
 
   }
 
-  .shop-menu{
-    position: fixed;
-    background: #fff;
-    width: 100%;
-    bottom: 0px;
-    height: 98px;
-    display: flex;
-    display: -webkit-flex; /* Safari */
-    flex-flow:row nowrap;
-    justify-content:space-around;
-    align-items:center;
-    color: #B3B3B3;
-    font-size:22px;
-    img{
-      width:44px;
-      height:44px;
-    }
-
-
-  }
 
 
 }
@@ -292,6 +272,26 @@
 
 /**shop 首页  end**//**shop 首页  end**/
 
+.shop-menu{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  bottom: 0px;
+  height: 98px;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-flow:row nowrap;
+  justify-content:space-around;
+  align-items:center;
+  color: #B3B3B3;
+  font-size:22px;
+  img{
+    width:44px;
+    height:44px;
+  }
+
+
+}
 
 
 
@@ -927,11 +927,26 @@
 
 /**order.vue 店铺详情   start**//**order.vue   start**/
 
+.flex-row-nowrap{
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-flow:row nowrap;
+  align-items:center;
+}
+
+.flex-clumn-nowrap{
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-flow:column wrap;
+  justify-content: flex-start;
+}
+
 
 .my-order-content {
   background: #e5e5e5;
   .my-ord-con {
-    padding-top: 80px;
+    margin-bottom: 90px;
+    padding-top: 160px;
     .my-ord-main {
       background: #fff;
       padding: 0px 0px 0px 30px;
@@ -945,15 +960,20 @@
     .my-mar-right{
       margin-right: 30px;
     }
-
-
     .menu-active{
       border-bottom: 4px solid rgba(255,86,85,1) ;
     }
 
     .my-ord-menu-ul {
+      -moz-box-shadow:0px 1px 2px #e5e5e5;
+      -webkit-box-shadow:0px 1px 2px #e5e5e5;
+      box-shadow:0px 1px 2px #e5e5e5;
+      position: fixed;
+      top:80px;
+      width: 100%;
       padding: 0px 30px ;
-      background: #FFFFFF;
+      z-index: 999;
+      background: #FFFFFF ;
       .my-ord-down-menu{
 
         display: flex;
@@ -977,10 +997,13 @@
 
    .my-ord-mid{
       width: 100%;
+      height: 100%;
+     overflow: hidden;
       background: #e5e5e5;
       .my-ord-li{
         background: #fff;
         .my-ord-shop{
+           border-bottom: 1px solid #e5e5e5;
            display: flex;
            flex-flow: row nowrap;
            justify-content: space-between;
@@ -1013,6 +1036,54 @@
           }
 
         }
+
+        .my-ord-reader{
+          border-bottom: 1px solid #e5e5e5;
+          padding: 20px 0px;
+           .my-ord-read-con{
+              height: 50px;
+             justify-content: space-between !important;
+             .my-ord-eat-name{
+               width: 60%;
+               overflow: hidden;
+               line-height: 40px;
+               text-overflow: ellipsis;
+               display: -webkit-box;
+               -webkit-line-clamp: 1;
+               -webkit-box-orient: vertical;
+               font-size:26px;
+               font-weight:500;
+               color:rgba(51,51,51,1);
+
+             }
+              .my-reader-li{
+                padding-left: 10px;
+                width: 40%;
+                justify-content: space-between !important;
+              }
+           }
+
+        }
+
+        .my-ord-num{
+          justify-content: space-between !important;
+           height: 90px;
+          p{
+            font-size:26px;
+            font-weight:500;
+            height: 40px;
+            line-height:40px;
+
+
+          }
+           &>p:nth-child(1){
+             color:rgba(255,86,85,1);
+           }
+           &>p:nth-child(2){
+           color:rgba(102,102,102,1);
+          }
+        }
+
       }
    }
 
@@ -1021,3 +1092,166 @@
 }
 
 /**order.vue 店铺详情   end**//**order.vue   end**/
+
+
+
+/**my_order_detail.vue 订单详情   start**/
+.my-detail-content {
+  background: #fff;
+  .my_detail {
+    padding-top: 80px;
+    .my-detail-main {
+      background: #fff;
+      padding: 0px 0px 0px 30px;
+    }
+    .det-leave {
+      height: 20px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+    .my-det-right{
+      margin-right: 30px;
+    }
+
+    .my-tail-head{
+
+      width:750px;
+      height:220px;
+      background:rgba(255,255,255,1);
+      img{
+        padding-left: 30px;
+        width:140px;
+        height:140px;
+      }
+
+      .my-tail-tit-right{
+        margin-left: 20px;
+         &>p:nth-child(1){
+           font-size:36px;
+           height: 60px;
+           font-weight:bold;
+           color:rgba(51,51,51,1);
+           line-height:40px;
+         }
+        &>p:nth-child(2){
+          font-size:28px;
+          font-weight:500;
+          color:rgba(102,102,102,1);
+          line-height:40px;
+        }
+
+      }
+    }
+
+    .my-tail-con{
+       .my-tail-shop{
+          height: 104px;
+          line-height: 104px;
+          font-size:32px;
+          font-weight:bold;
+          color:rgba(51,51,51,1);
+          border-bottom: 1px solid #e5e5e5;
+       }
+
+      .my-tail-ul{
+        padding: 30px 0px;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+       .tail-list{
+           justify-content: space-between !important;
+          p{
+            height: 50px;
+            line-height: 50px;
+          }
+          .list-name{
+            padding-right: 10px;
+            width: 55%;
+            p{
+              font-size:28px;
+              font-weight:500;
+              overflow: hidden;
+              width: 100%;
+              color:rgba(51,51,51,1);
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+          }
+          .list-price{
+            justify-content: space-between !important;
+            padding-right: 30px;
+            width: 45%;
+            p{
+              font-size:28px;
+              font-weight:500;
+              color:rgba(102,102,102,1);
+            }
+          }
+       }
+
+      .my-tail-type{
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px 0px;
+         p{
+           height: 50px;
+           font-size:28px;
+           font-weight:500;
+           color:rgba(51,51,51,1);
+           line-height:50px;
+         }
+      }
+
+      .my-tail-readme{
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px 0px;
+        p{
+          padding-right: 30px;
+          font-size:28px;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          line-height:50px;
+        }
+      }
+
+      .my-tail-totail{
+        border-bottom: 1px solid #e5e5e5;
+        justify-content: space-between !important;
+        p{
+          height: 80px;
+          line-height: 80px;
+          font-size:32px;
+          font-family:PingFang-SC-Medium;
+          font-weight:500;
+        }
+        &>p:nth-child(1){
+          color:rgba(51,51,51,1);
+        }
+        &>p:nth-child(2){
+          padding-right: 30px;
+          color:rgba(255,86,85,1);
+        }
+
+
+      }
+
+      .my-tail-date{
+
+         p{
+           height: 50px;
+           line-height: 50px;
+           font-size:28px;
+           font-weight:500;
+           color:rgba(153,153,153,1);
+         }
+      }
+
+    }
+
+  }
+}
+
+
+
+/**my_order_detail.vue 订单详情   end**/

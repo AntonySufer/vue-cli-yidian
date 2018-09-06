@@ -72,7 +72,7 @@
         <img src="@assets/foodimg/order.png"/>
         <p>订单</p>
       </div>
-      <div class="hot-img-chi" @click="menuBind('my')">
+      <div class="hot-img-chi" @click="menuBind('myCenter')">
         <img src="@assets/foodimg/my.png"/>
         <p>我的</p>
       </div>

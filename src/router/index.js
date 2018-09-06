@@ -31,13 +31,15 @@ export default new Router({
      { path: '/', component: resolve => require(['../food/index.vue'], resolve) },
      { path: '/shop', component: resolve => require(['../food/shop.vue'], resolve) },
     { path: '/order', component: resolve => require(['../food/order.vue'], resolve) },
-    { path: '/my', name:'my', component: resolve => require(['../food/my_center.vue'], resolve) },
+    { path: '/myCenter', name:'myCenter', component: resolve => require(['../food/my_center.vue'], resolve) },
     { path: '/downOrd', name:'downOrd', component: resolve => require(['../food/down_order.vue'], resolve) },
     { path: '/shopDetail', name:'shopDetail', component: resolve => require(['../food/shop_detail.vue'], resolve) },
     { path: '/dishDetail', name:'dishDetail', component: resolve => require(['../food/dish_detail.vue'], resolve) },
     { path: '/preOrder', name:'preOrder', component: resolve => require(['../food/pre_order.vue'], resolve) },
     { path: '/payOrder', name:'payOrder', component: resolve => require(['../food/pay_order.vue'], resolve) },
-    { path: '/paySuc', name:'paySuc', component: resolve => require(['../food/pay_success.vue'], resolve) }
+    { path: '/paySuc', name:'paySuc', component: resolve => require(['../food/pay_success.vue'], resolve) },
+    { path: '/myOrdDet', name:'myOrdDet', component: resolve => require(['../food/my_order_detail.vue'], resolve) },
+
   ]
 
 
