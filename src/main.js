@@ -11,6 +11,7 @@ import './assets/css/public.css'/*引入公共样式*/
 
 //import './assets/css/main.css'/*引入公共样式*/
 
+
 import './assets/css/food.css'/*引入公共样式 food 点餐*/
 
 import axios from './config/api/axios'   /*数据请求*/

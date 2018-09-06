@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-err">
     <p class="err-head">错 误</p>
    <img src="@assets/foodimg/404.jpg"/>
    <div class="err-btn">
@@ -8,6 +8,10 @@
   </div>
 </template>
 <style type="text/css">
+  .app-err{
+    height: 100%;
+    width: 100%;
+  }
   .err-head{
     height:80px;
     line-height: 80px;

@@ -7,7 +7,7 @@
     </div>
 
     <input type="button" value="下载" @click="download"/>
-    <a href="/static/video/33.mp4" download="33.mp4" >下现在在</a>
+    <!--<a href="/static/video/33.mp4" download="33.mp4" >下现在在</a>-->
   </div>
 </template>
 

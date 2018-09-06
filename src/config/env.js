@@ -10,9 +10,8 @@
 let baseUrl = '';
 let routerMode = 'hash';
 let imgBaseUrl;
-console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV == 'development') {
-  baseUrl = 'http://192.168.1.34:8080';
+  baseUrl = 'http://192.168.1.146:8080';
  //imgBaseUrl = 'http://cangdu.org:8001/img/';
 
 }else if(process.env.NODE_ENV == 'production'){

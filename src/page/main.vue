@@ -61,7 +61,6 @@
       },
       getNotes(){
          var _this = this ;
-        console.log(this.$api.getNotes);
         this.$axios.post(this.$api.getNotes).then((response)=>{
           var Data =response.data;
           if (Data && Data.status==200){

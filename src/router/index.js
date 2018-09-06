@@ -19,16 +19,16 @@ Vue.use(Router);
 export default new Router({
   mode:routerMode,
   routes: [
-    // { path: '/', component: resolve => require(['../page/main.vue'], resolve) },
+    { path: '*', component: resolve => require(['../components/err.vue'], resolve) },
+    { path: '/main', component: resolve => require(['../page/main.vue'], resolve) },
     { path: '/art/:id?', name: 'art',   component: resolve => require(['../page/art.vue'], resolve)},
-    // { path: '*', component: resolve => require(['../components/err.vue'], resolve) },
     { path: '/history', meta: { keepAlive: true }, component: resolve => require(['../page/historyList.vue'], resolve) },
     { path: '/attent', meta: { keepAlive: true },component: resolve => require(['../page/attention.vue'], resolve) },
     { path: '/my', component: resolve => require(['../page/my.vue'], resolve) },
     { path: '/kuai', meta: { keepAlive: true }, component: resolve => require(['../page/getkuai.vue'], resolve) },
 
-    { path: '*', component: resolve => require(['../components/err.vue'], resolve) },
-     { path: '/', component: resolve => require(['../food/index.vue'], resolve) },
+
+     { path: '/', component: resolve => require(['../food/shop.vue'], resolve) },
      { path: '/shop', component: resolve => require(['../food/shop.vue'], resolve) },
     { path: '/order', component: resolve => require(['../food/order.vue'], resolve) },
     { path: '/myCenter', name:'myCenter', component: resolve => require(['../food/my_center.vue'], resolve) },

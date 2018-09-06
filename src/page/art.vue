@@ -59,17 +59,8 @@
       }
     },
     computed: {
-      ...mapState(['showLoading']),
-      ...mapState(['userInfo']),
+      ...mapState(['showLoading','userInfo']),
       //内容高度
-      conHeight: function () {
-        //获取屏幕高度
-        let valHeight =   `${document.documentElement.clientHeight-104}` ;
-        window.onresize = function temp() {
-          valHeight = `${document.documentElement.clientHeight-104}`;
-        };
-        return valHeight;
-      },
       //图片显示
       isShow:function () {
           if (!this.imgUrl){
@@ -80,10 +71,12 @@
     },
 
     created(){
-       this.getNewArt();
+      console.log(this.userInfo);
+      this.getNewArt();
 
     },
     mounted(){
+
     },
     methods:{
        /*侧边栏*/
